@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERAPH — Sistemas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#ffffff;
+      --primary-dark:#000000;
+      --gold:#d4af37;
+      --wine:#5b0014;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+    body{background:#070707;color:var(--primary);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+
+    .bg{ position:fixed;
+          inset:0;
+          z-index:-1;
+          pointer-events:none;
+          background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.08), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(91,0,20,.18), transparent 45%),
+    linear-gradient(180deg,#050505,#000000);
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:20px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.4);
+      backdrop-filter:blur(10px);
+      z-index:10
+    }
+
+    header h1{letter-spacing:6px;font-weight:800}
+
+    .cta{
+      display:inline-block;
+      padding:18px 40px;
+      border:1px solid var(--gold);
+      border-radius:40px;
+      color:var(--gold);
+      font-weight:600;
+      transition:.3s
+    }
+
+    .cta:hover{background:var(--wine);color:var(--primary)}
+
+    .hero{
+      min-height:100vh;
+      padding:160px 80px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:30px;
+      max-width:900px;
+    }
+
+    .hero h2{font-size:64px;line-height:1.1}
+    .hero p{opacity:.7;font-size:18px;max-width:600px}
+
+    .section{padding:120px 80px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:40px
+    }
+
+    .card{
+      background:rgba(255,255,255,.03);
+      padding:36px;
+      border-radius:22px;
+      border:1px solid rgba(212,175,55,.25)
+    }
+
+    .card h3{margin-bottom:12px;color:var(--gold)}
+    .card p{opacity:.6;font-size:14px}
+
+    .contact{
+      padding:140px 80px;
+      display:flex;
+      flex-direction:column;
+      gap:30px;
+      align-items:flex-start
+    }
+
+    .contact h3{font-size:42px}
+
+    footer{text-align:center;padding:40px;opacity:.4}
+
+    @media(max-width:768px){
+      header{padding:20px}
+      .hero{padding:120px 30px}
+      .hero h2{font-size:42px}
+      .section,.contact{padding:80px 30px}
+    }
+
+    section, header, footer {
+    position: relative;
+    z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header>
+    <h1>SERAPH</h1>
+    <a href="index.html" class="cta">Voltar</a>
+  </header>
+
+  <section class="hero">
+    <h2>Sistemas SERAPH</h2>
+    <h2 style="font-size:52px;margin-bottom:30px">Arquitetura de Domínio Digital</h2>
+
+  <p style="opacity:.7;max-width:760px;margin-bottom:22px">
+    Sistemas SERAPH não são páginas, nem scripts isolados. São estruturas digitais pensadas como extensão do controle humano.
+    Cada automação, cada painel e cada integração é construída para eliminar ruído operacional e transformar dados em poder real
+    de decisão.
+  </p>
+
+  <p style="opacity:.7;max-width:760px;margin-bottom:22px">
+    Não trabalhamos com soluções genéricas. O que criamos é arquitetura. Fluxos que reduzem tempo, painéis que revelam gargalos,
+    integrações que fazem negócios respirarem sem intervenção constante. Seu sistema passa a trabalhar enquanto você domina.
+  </p>
+
+  <p style="opacity:.7;max-width:760px;margin-bottom:22px">
+    A SERAPH projeta ambientes digitais onde o operador não reage — ele antecipa. Tudo é pensado para escala, estabilidade e
+    leitura estratégica: vendas, estoque, clientes, performance, operações internas. Nada fica invisível.
+  </p>
+
+  <p style="opacity:.7;max-width:760px">
+    Um sistema SERAPH não é apenas tecnologia. É postura operacional. É sair do improviso e entrar em um território onde cada ação
+    é guiada por informação, automação e presença.
+  </p>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="card">
+        <h3>Automação</h3>
+        <p>Fluxos inteligentes para eliminar tarefas manuais e aumentar escala.</p>
+      </div>
+      <div class="card">
+        <h3>Painéis & Dashboards</h3>
+        <p>Visualização estratégica de dados para decisões rápidas.</p>
+      </div>
+      <div class="card">
+        <h3>Integrações</h3>
+        <p>Conexão entre sistemas, lojas, APIs e operações internas.</p>
+      </div>
+      <div class="card">
+        <h3>Estruturas Digitais</h3>
+        <p>Arquitetura técnica pensada para crescer junto com o negócio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Pronto para elevar o domínio?</h3>
+    <p style="opacity:.6;max-width:520px">
+      Se quer sistemas que realmente funcionam como extensão do seu controle, fale direto com a SERAPH.
+    </p>
+    <a href="https://wa.me/5547989201540" target="_blank" class="cta">FALE CONOSCO</a>
+  </section>
+
+  <footer>
+    <p>© SERAPH — All rights reserved</p>
+  </footer>
+
+</body>
+</html>

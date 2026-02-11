@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERAPH — Produtos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#ffffff;
+      --primary-dark:#000000;
+      --gold:#d4af37;
+      --wine:#5b0014;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+    body{background:#070707;color:var(--primary);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+
+    .bg{
+      position:fixed;
+      inset:0;
+      z-index:-1;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255,255,255,.08), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(91,0,20,.18), transparent 45%),
+        linear-gradient(180deg,#050505,#000000);
+    }
+
+    header,section,footer{position:relative;z-index:2}
+
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:20px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.4);
+      backdrop-filter:blur(10px);
+      z-index:10
+    }
+
+    header h1{letter-spacing:6px;font-weight:800}
+
+    .cta{
+      display:inline-block;
+      padding:18px 40px;
+      border:1px solid var(--gold);
+      border-radius:40px;
+      color:var(--gold);
+      font-weight:600;
+      transition:.3s
+    }
+
+    .cta:hover{background:var(--wine);color:var(--primary)}
+
+    .hero{
+      min-height:100vh;
+      padding:160px 80px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:30px;
+      max-width:920px;
+    }
+
+    .hero h2{font-size:64px;line-height:1.1}
+    .hero p{opacity:.7;font-size:18px;max-width:640px}
+
+    .section{padding:120px 80px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:40px
+    }
+
+    .card{
+      background:rgba(255,255,255,.03);
+      padding:36px;
+      border-radius:22px;
+      border:1px solid rgba(212,175,55,.25)
+    }
+
+    .card h3{margin-bottom:12px;color:var(--gold)}
+    .card p{opacity:.6;font-size:14px}
+
+    .cta-area{
+      padding:160px 80px;
+      display:flex;
+      flex-direction:column;
+      gap:30px;
+      align-items:flex-start;
+      background:linear-gradient(135deg,rgba(212,175,55,.05),rgba(91,0,20,.18));
+      border-top:1px solid rgba(212,175,55,.2);
+    }
+
+    .cta-area h3{font-size:42px}
+
+    footer{text-align:center;padding:40px;opacity:.4}
+
+    @media(max-width:768px){
+      header{padding:20px}
+      .hero{padding:120px 30px}
+      .hero h2{font-size:42px}
+      .section,.cta-area{padding:80px 30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header>
+    <h1>SERAPH</h1>
+    <a href="index.html" class="cta">Voltar</a>
+  </header>
+
+  <section class="hero">
+    <h2>Produtos SERAPH</h2>
+    <p>
+      A SERAPH cria dispositivos e serviços que não são apenas utilidade — são extensão da presença.
+      Cada produto é pensado para quem quer dominar sua rotina, seu estilo e sua operação com tecnologia real.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 style="font-size:52px;margin-bottom:30px">Tecnologia como Extensão</h2>
+
+    <p style="opacity:.7;max-width:760px;margin-bottom:22px">
+      Não vendemos apenas itens. Vendemos postura tecnológica. A SERAPH seleciona, adapta e desenvolve produtos que elevam
+      o controle pessoal e profissional. Desde wearables até estruturas digitais conectadas ao seu ecossistema.
+    </p>
+
+    <p style="opacity:.7;max-width:760px;margin-bottom:22px">
+      Nossos produtos são escolhidos por três pilares: função real, estética brutal e integração prática.
+      Tudo que entra na SERAPH precisa servir o corpo, a mente e a operação. Sem ruído. Sem excesso.
+    </p>
+
+    <p style="opacity:.7;max-width:760px;margin-bottom:22px">
+      Além do físico, a SERAPH entrega serviços: configuração, integração, automação e suporte estratégico.
+      Seu produto não chega sozinho — ele chega operando.
+    </p>
+
+    <p style="opacity:.7;max-width:760px">
+      O objetivo é simples: você não usa tecnologia. Você a incorpora ao seu domínio pessoal.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="card">
+        <h3>Wearables</h3>
+        <p>Smartwatches e dispositivos corporais que ampliam controle, comunicação e presença.</p>
+      </div>
+      <div class="card">
+        <h3>Dispositivos Inteligentes</h3>
+        <p>Tecnologia prática para rotina, performance e gestão pessoal.</p>
+      </div>
+      <div class="card">
+        <h3>Integração SERAPH</h3>
+        <p>Configuração, conexão e automação dos seus produtos com sistemas e plataformas.</p>
+      </div>
+      <div class="card">
+        <h3>Serviços Estratégicos</h3>
+        <p>Consultoria técnica para estruturar seu ecossistema digital com clareza e escala.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-area">
+    <h3>Pronto para acessar o arsenal SERAPH?</h3>
+    <p style="opacity:.6;max-width:520px">
+      Explore os produtos que elevam sua presença, estilo e domínio tecnológico.
+    </p>
+    <a href="https://seraph4.lojavirtualnuvem.com.br" class="cta">ACESSE A LOJA</a>
+  </section>
+
+  <footer>
+    <p>© SERAPH — All rights reserved</p>
+  </footer>
+
+</body>
+</html>

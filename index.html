@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERAPH — Tecnologia com Presença</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#ffffff;
+      --primary-dark:#000000;
+      --gold:#d4af37;
+      --wine:#5b0014;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+    body{background:#070707;color:var(--primary);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+
+    .bg{position:fixed;inset:0;background:radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.08), transparent 40%), radial-gradient(circle at 80% 80%, rgba(91,0,20,0.18), transparent 45%), linear-gradient(180deg,#050505,#000000);}
+
+    header{position:fixed;top:0;width:100%;padding:20px 60px;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,.4);backdrop-filter:blur(10px);z-index:10}
+    header h1{letter-spacing:6px;font-weight:800;color:var(--primary)}
+
+    .hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;padding:140px 80px;position:relative;gap:80px}
+    .hero-content{max-width:700px}
+    .hero h2{font-size:64px;line-height:1.1;margin-bottom:20px}
+    .hero p{opacity:.7;font-size:18px;margin-bottom:40px}
+
+    .cta{display:inline-block;padding:18px 40px;border:1px solid var(--gold);border-radius:40px;color:var(--gold);font-weight:600;transition:.3s}
+    .cta:hover{background:var(--wine);color:var(--primary)}
+
+    .section{padding:120px 80px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px}
+
+    .card{background:rgba(255,255,255,.03);padding:30px;border-radius:20px;border:1px solid rgba(212,175,55,.25)}
+    .card h3{margin-bottom:10px;color:var(--gold)}
+    .card p{opacity:.6;font-size:14px}
+
+    footer{text-align:center;padding:40px;opacity:.4}
+
+    .systems-panel{background:linear-gradient(135deg,rgba(212,175,55,.06),rgba(91,0,20,.25));border:1px solid rgba(212,175,55,.25);border-radius:28px;padding:60px;min-height:420px;display:flex;flex-direction:column;justify-content:center;backdrop-filter:blur(6px)}
+
+.systems-panel h3{font-size:36px;margin-bottom:20px;letter-spacing:2px}
+.systems-panel p{opacity:.7;margin-bottom:40px;max-width:420px}
+.systems-panel .cta{align-self:flex-start}
+
+@media(max-width:768px){
+      header{padding:20px}
+      .hero{padding:120px 30px}
+      .hero h2{font-size:42px}
+      .section{padding:80px 30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header>
+  <h1>SERAPH</h1>
+
+  <div style="display:flex; gap:18px;">
+    <a href="/sistemas.html" class="cta">Sistemas</a>
+    <a href="/produtos.html" class="cta">Produtos</a>
+  </div>
+</header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Tecnologia.
+        Estilo.
+        Presença.</h2>
+      <p>A SERAPH não vende produtos. Entregamos extensão humana. Dispositivos que se tornam parte do seu domínio pessoal.</p>
+      <a id="enter" href="https://seraph4.lojavirtualnuvem.com.br" class="cta">ACESSAR LOJA</a>
+    </div>
+
+    <div class="systems-panel">
+      <h3>Sistemas SERAPH</h3>
+      <p>Automação, painéis, integrações e estruturas digitais para elevar o domínio operacional do seu negócio.</p>
+      <a href="#" class="cta">ACESSAR SISTEMAS</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="card">
+        <h3>Minimalismo Brutal</h3>
+        <p>Design limpo, escuro, agressivo e elegante.</p>
+      </div>
+      <div class="card">
+        <h3>Função Real</h3>
+        <p>Tecnologia que serve o corpo e a mente.</p>
+      </div>
+      <div class="card">
+        <h3>Marca Viva</h3>
+        <p>SERAPH é identidade, não só produto.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© SERAPH — All rights reserved</p>
+  </footer>
+</body>
+</html>
